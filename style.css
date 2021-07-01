@@ -1,0 +1,44 @@
+
+.content{
+    margin-top: 10px;
+    border-style: outset;
+    width: 500px;
+}
+
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding: 5px 0 5px 25px;
+}
+
+.text_input{
+    margin-top: 10px;
+}
+
+.item{
+    width: 500px;
+    padding: 10px 0 10px 0;
+    border-bottom: 2px solid gray;
+}
+
+label:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.checkbox label:before {
+    background: url(icons/nocheck.png);
+}
+
+input[type=checkbox]:checked + label:before {
+    background: url(icons/completed.png) ;
+}
