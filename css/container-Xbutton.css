@@ -1,0 +1,18 @@
+.main__container_item_button{
+    display: none;
+}
+
+.main__container_item:hover .main__container_item_button{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: 5px;
+    cursor: pointer;
+    border-style: none;
+    background: url(../icons/close.png) center no-repeat;
+
+}
+.main__container_item_button:focus{
+
+}

@@ -1,0 +1,61 @@
+label {
+    display: inline-block;
+    position: relative;
+    padding: 5px 0 5px 25px;
+}
+
+
+.main__container_item{
+    width: 490px;
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #e6e6e6;
+
+}
+
+.first-item{
+    border-top: 1px solid #e6e6e6;
+}
+
+label:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+
+}
+
+
+li{
+    margin-left: -40px;
+    list-style-type: none;
+
+}
+
+
+.main__container_item_check {
+    display: none;
+}
+
+.main__container label:before {
+    border: 1px solid #efefef;
+    border-radius: 50%;
+}
+
+
+.main__container_item_check:checked + label:before {
+    border: 1px solid #61c3b1;
+    background: url(../icons/completed.png) center no-repeat;
+
+}
+
+
+.main__container_item_text{
+    border-style: hidden;
+    margin: 5px;
+    width: 400px;
+    color: #666666;
+
+}
+
+

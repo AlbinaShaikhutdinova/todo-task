@@ -1,0 +1,23 @@
+/*user input line*/
+.main__user-input{
+    margin: 20px 10px 15px 10px;
+}
+
+.main__user-input_text{
+    border-style: hidden;
+    width: 400px;
+    height: 20px;
+
+
+}
+.main__user-input_text:focus{
+    font-style: normal;
+    font-size: 18px;
+}
+
+.main__user-input_text::placeholder{
+    font-style: italic;
+    color:#dadada;
+    font-size: 18px;
+    font-weight: lighter;
+}

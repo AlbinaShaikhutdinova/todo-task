@@ -2,43 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>TODO_TEST</title>
 </head>
 <body>
 <form action="#">
 
-        <h1>TODOS</h1>
-    <div class="content">
-        <div class="item">
-            <div id="image" style="display:inline">
-                <img src="icons/select-all.png" alt="select-all"/>
-            </div>
-            <div id="texts" style="display:inline">
-               <input placeholder="What needs to be done?" type="text">
-            </div>
+    <div class="header">
+        <h1>todos</h1>
+    </div>
+    <div class="main">
+        <div class="main__user-input">
+                <img class="main__user-input_image" src="icons/select-all.png" alt="select-all"/>
+               <input class="main__user-input_text" placeholder="What needs to be done?" type="text">
 
         </div>
 
-        <div class="checkbox">
-            <div class="item">
-                <input type="checkbox" id="ht">
-                <label for="ht">HTML</label>
-            </div>
-            <div class="item">
-                <input type="checkbox" id="css">
-                <label  for="css">CSS</label>
-            </div>
-            <div class="item">
-                <input type="checkbox" id="js">
-                <label for="js">JS</label>
-            </div>
-            <div class="item">
-                <input type="checkbox" id="js_tools">
-                <label for="js_tools">JS tools</label>
-            </div>
+        <ul class="main__container">
+            <li class="main__container_item first-item">
+                <input class="main__container_item_check" type="checkbox" id="ht">
+                <label for="ht">
+                    <input class="main__container_item_text" value="HTML" type="text">
+                </label>
+                <button class="main__container_item_button"></button>
+            </li>
+            <li class="main__container_item">
+                <input class="main__container_item_check" type="checkbox" id="css">
+                <label for="css">
+                    <input class="main__container_item_text" value="CSS" type="text">
+                </label>
+                <button class="main__container_item_button"></button>
+            </li>
+            <li class="main__container_item">
+                <input class="main__container_item_check" type="checkbox" id="js">
+                <label for="js">
+                    <input class="main__container_item_text" value="JS" type="text">
+                </label>
+                <button class="main__container_item_button"></button>
+            </li>
+            <li class="main__container_item">
+                <input class="main__container_item_check" type="checkbox" id="js_tools">
+                <label for="js_tools">
+                    <input class="main__container_item_text" value="JS tools" type="text">
+                </label>
+                <button class="main__container_item_button"></button>
+            </li>
+        </ul>
+
+        <div class="footer">
+            <div class="footer__items">
+            <span class="footer__items-left" >3 items left</span>
+                <div class="footer__button-center">
+            <button class="footer_button center-button">All</button>
+            <button class="footer_button center-button">Active</button>
+            <button class="footer_button center-button">Completed</button>
+                </div>
+            <button class="footer_button last-button">Clear completed</button>
+        </div>
         </div>
     </div>
+
+
 
 </form>
 </body>

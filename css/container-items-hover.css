@@ -1,0 +1,14 @@
+/*hover background color*/
+.main__container_item:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.main__container_item:hover .main__container_item_text{
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.main__container_item:hover label:before {
+    background-color: white;
+}
